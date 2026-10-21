@@ -1,0 +1,10 @@
+# Preuves brutes et secrets : JAMAIS dans le depot
+preuves-locales/
+*.har
+*.cookies
+*.token
+.env
+.env.*
+*secret*
+*credential*
+__pycache__/
