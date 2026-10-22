@@ -1,4 +1,41 @@
-# 02 — Setup Chromium (Mission 0, ~30 min)
+# 02 — Setup navigateur (Mission 0, ~30 min)
+
+## 0. Installer le navigateur — et clarifier qui contrôle quoi
+
+**Qui contrôle quoi (important)** : je n'ai **aucun** accès à ton PC et je ne peux ni voir
+ton écran, ni piloter ton navigateur à distance. Mon environnement est séparé du tien.
+Concrètement : je t'écris les clics/scripts ici, **tu** les exécutes chez toi, tu me renvoies
+les résultats (texte/captures sanitisées). Tu restes aux commandes à 100 % — c'est aussi ce
+qu'exige le programme (tests depuis tes comptes, ton IP).
+
+**Oui, Chromium/Chrome sont scriptables** (protocole DevTools, Puppeteer/Playwright) — mais
+sur la cible OpenAI, on restera **manuels** : le brief écarte fuzzing/scanners automatisés et
+le contournement de CAPTCHA, et l'automatisation peut déclencher rate-limit/bannissement.
+Les seuls scripts qu'on utilisera seront des utilitaires *locaux* que tu lances toi-même
+(ex. `tools/sanitize_har.py`), lisibles dans ce dépôt avant exécution.
+
+**Quel navigateur installer ?** N'importe quel navigateur à base Chromium **à jour** avec
+profils + DevTools convient. Recommandation, du plus simple au plus « pur » :
+
+1. **Google Chrome (recommandé pour débuter)** — https://www.google.com/chrome —
+   installeur officiel, **mises à jour de sécurité automatiques**, profils et DevTools
+   identiques à Chromium. La page officielle Chromium elle-même conseille les builds
+   Chrome pour la plupart des usages, car ils s'auto-mettent à jour.
+2. **Chromium officiel** — https://download-chromium.appspot.com (lien « point and click »
+   de https://www.chromium.org/getting-involved/download-chromium/) : télécharge un ZIP,
+   dézippe, lance l'exécutable (`chrome.exe` sous Windows, app Chromium sous macOS).
+   ⚠️ Builds « best-effort », **aucune mise à jour automatique** : à re-télécharger soi-même
+   régulièrement. Sous **Linux**, préfère ton gestionnaire de paquets
+   (Debian/Ubuntu : `sudo apt install chromium` ; Fedora : `sudo dnf install chromium` ;
+   Arch : `sudo pacman -S chromium`).
+3. Déjà installé chez toi ? **Brave** ou **Edge** (base Chromium) font aussi l'affaire
+   pour la Phase 1 — dis-moi simplement lequel tu as.
+
+🚫 **Jamais** de sites de téléchargement tiers (« chromium gratuit », installeurs repackés) :
+risque de malware. Uniquement les sources officielles ci-dessus ou les paquets de ton OS.
+
+Vérification après install : ouvre le navigateur, tape `chrome://version` dans la barre
+d'adresse (`chromium://version` sous Chromium pur) et note la première ligne pour ton retour.
 
 ## 1. Comptes
 
