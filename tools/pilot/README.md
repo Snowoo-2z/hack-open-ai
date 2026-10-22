@@ -65,8 +65,10 @@ google-chrome --remote-debugging-port=9222 --remote-debugging-address=127.0.0.1 
 > (dossier `oai-pilot`), aucun compte perso dedans, et on **ferme** ces fenêtres à la fin
 > de la session. Ne lance jamais une commande venue d'ailleurs que ce dépôt sans me la montrer.
 
-Ensuite, dans chaque fenêtre : connecte-toi **manuellement** (A : `snwdc@bugcrowdninja.com`,
-B : `snwdc+b@bugcrowdninja.com`). Au premier lancement, crée les comptes OpenAI comme
+Ensuite, dans chaque fenêtre : connecte-toi **manuellement** (A : `snwdc@bugcrowdninja.com` ;
+B : une **adresse email réellement distincte** — ⚠️ constaté le 22/10/2026 : OpenAI normalise
+les alias `+…`, `snwdc+b@bugcrowdninja.com` retombe sur le compte A. Pour B : ta boîte perso
+ou une boîte gratuite dédiée, ex. Outlook/Proton). Au premier lancement, crée les comptes OpenAI comme
 décrit dans `../../02-setup-chromium.md` — le profil piloté remplace les profils colorés.
 
 ## Exécuter une mission

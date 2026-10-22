@@ -45,7 +45,11 @@ d'adresse (`chromium://version` sous Chromium pur) et note la première ligne po
       de ton compte Bugcrowd (généré à la 1ʳᵉ connexion, jusqu'à ~10 min d'attente).
       Ton pseudo se lit dans l'URL de ton profil : `bugcrowd.com/h/<pseudo>`.
       Astuce 2 comptes : `pseudo+a@bugcrowdninja.com` et `pseudo+b@bugcrowdninja.com`
-      arrivent dans la même boîte. OpenAI *préfère* cet alias mais le brief dit
+      arrivent dans la même boîte — ⚠️ **mais pas chez OpenAI** : constaté le 22/10/2026,
+      leur inscription normalise les alias `+…` et retombe sur le même compte. Le compte B
+      exige donc une **vraie 2ᵉ adresse** (boîte perso ou boîte gratuite dédiée type
+      Outlook/Proton). Ne jamais créer un 2ᵉ compte Bugcrowd pour un 2ᵉ alias.
+      OpenAI *préfère* cet alias mais le brief dit
       explicitement qu'il n'est **pas obligatoire** — un compte perso convient aussi.
       Doc : https://docs.bugcrowd.com/researchers/participating-in-program/your-bugcrowdninja-email-address/
 - [ ] Compte OpenAI **A** (« victime ») — idéalement l'adresse bugcrowdninja.

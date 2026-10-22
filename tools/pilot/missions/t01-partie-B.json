@@ -4,7 +4,7 @@
   "steps": [
     {
       "action": "wait_for_user",
-      "message": "Verifie dans Chrome pilote B que tu es bien connecte avec le compte B (snwdc+b), et que la mission T-01 partie A a deja tourne (elle a sauvegarde l'URL en local). Puis Entree ici.",
+      "message": "Verifie dans Chrome pilote B que tu es connecte avec le compte B (adresse DIFFERENTE de snwdc@bugcrowdninja.com - clique l'avatar en bas a gauche pour controler l'email ; si c'est le compte A, deconnecte-le et connecte B). La mission T-01 partie A doit deja avoir tourne (URL sauvegardee en local). Puis Entree ici.",
       "note": "preparation : aucun copier-coller d'URL necessaire"
     },
     {

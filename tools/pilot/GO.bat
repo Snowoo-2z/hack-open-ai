@@ -53,7 +53,7 @@ goto MENU
 call :FIND_CHROME
 if not exist "%CHROME%" goto MENU
 start "" "%CHROME%" --remote-debugging-port=9223 --remote-debugging-address=127.0.0.1 --user-data-dir="%USERPROFILE%\oai-pilot\B" "https://chatgpt.com"
-echo Chrome B lance. Connecte-toi avec snwdc+b@bugcrowdninja.com si besoin.
+echo Chrome B lance. Connecte-toi avec le compte B (adresse email DISTINCTE de A : les alias +b sont fusionnes par OpenAI).
 timeout /t 2 >nul
 goto MENU
 
