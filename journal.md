@@ -8,3 +8,4 @@
 | 2026-10-21 | — | — | — | Lecture du brief Bugcrowd, kit initial créé. |
 | 2026-10-22 | Mission 0 | — | 🔄 | Alias @bugcrowdninja.com validé (mails de test reçus, alias simple et variante `+`). Création des comptes A/B en cours. |
 | 2026-10-22 | Mission 0 | — | 🔄 | Navigateur pas encore installé côté chercheur : instructions officielles ajoutées (§0 du setup) + clarification : aucun contrôle à distance, tests manuels. En attente OS + navigateur choisi. |
+| 2026-10-22 | Mission 0 | — | 🔄 | Chrome disponible côté chercheur. Harnais de pilotage semi-automatique livré (`tools/pilot/`) : missions JSON en liste blanche, connexion locale au Chrome lancé par le chercheur, logins manuels, validation Entrée à chaque étape. En attente : OS, install Python/Playwright, 1ʳᵉ mission d'exemple. |

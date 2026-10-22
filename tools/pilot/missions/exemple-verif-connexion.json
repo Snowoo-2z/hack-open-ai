@@ -1,0 +1,25 @@
+{
+  "nom": "Exemple - verifier la connexion compte A",
+  "port": 9222,
+  "steps": [
+    {
+      "action": "wait_for_user",
+      "message": "Dans la fenetre Chrome pilotee (compte A) : connecte-toi a chatgpt.com si ce n'est pas fait, jusqu'a voir l'ecran principal de ChatGPT. Puis Entree ici.",
+      "note": "connexion manuelle, aucun mot de passe ne passe par le script"
+    },
+    {
+      "action": "page_info",
+      "note": "ou sommes-nous ?"
+    },
+    {
+      "action": "screenshot",
+      "fichier": "accueil-compte-A",
+      "note": "etat des lieux (relis la capture : masque ton email si visible)"
+    },
+    {
+      "action": "extract_text",
+      "fichier": "texte-accueil-A",
+      "note": "menus et boutons visibles = inventaire automatique"
+    }
+  ]
+}

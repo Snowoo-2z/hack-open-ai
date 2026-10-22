@@ -8,3 +8,6 @@ preuves-locales/
 *secret*
 *credential*
 __pycache__/
+# Pilotage local : profils Chrome de test et resultats bruts
+oai-pilot/
+tools/pilot/resultats/

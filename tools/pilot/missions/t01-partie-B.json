@@ -1,0 +1,40 @@
+{
+  "nom": "T-01 partie B - conversation privee de A ouverte avec le compte B",
+  "port": 9223,
+  "steps": [
+    {
+      "action": "wait_for_user",
+      "message": "AVANT de lancer cette mission : 1) remplace l'URL placeholder de l'etape suivante par l'URL de TA conversation privee du compte A (copiee dans tes notes locales, ne la commite jamais), 2) verifie dans Chrome pilote B que tu es bien connecte avec le compte B. Puis Entree ici.",
+      "note": "preparation manuelle"
+    },
+    {
+      "action": "goto",
+      "url": "https://chatgpt.com/c/__REMPLACE_PAR_L_ID_DE_TA_CONVERSATION_A__",
+      "note": "ouverture directe, sans partage"
+    },
+    {
+      "action": "wait",
+      "secondes": 4,
+      "note": "laisser la page finir de charger"
+    },
+    {
+      "action": "page_info",
+      "note": "URL finale apres redirections eventuelles"
+    },
+    {
+      "action": "check_text",
+      "texte": "MARQUEUR-A-001",
+      "note": "SAIN ATTENDU : ABSENT. Si TROUVE = anomalie, on s'arrete et on en parle."
+    },
+    {
+      "action": "screenshot",
+      "fichier": "resultat-t01-B",
+      "note": "preuve visuelle cote B"
+    },
+    {
+      "action": "extract_text",
+      "fichier": "texte-page-B",
+      "note": "message exact affiche chez B"
+    }
+  ]
+}

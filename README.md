@@ -32,6 +32,7 @@ Brief lu et résumé le **2026-10-21** (dernière mise à jour affichée : 21 oc
 | [`journal.md`](journal.md) | Journal de bord : un test = une ligne datée |
 | [`templates/rapport-bugcrowd.md`](templates/rapport-bugcrowd.md) | Gabarit de rapport prêt à soumettre (EN) |
 | [`tools/sanitize_har.py`](tools/sanitize_har.py) | Nettoie un export HAR (cookies, Authorization, tokens) avant partage |
+| [`tools/pilot/`](tools/pilot/README.md) | Pilotage semi-automatique de ton Chrome : missions JSON prêtes, validation humaine à chaque étape, résultats automatiques |
 
 ## Confidentialité — CRITIQUE
 
