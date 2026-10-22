@@ -2,9 +2,15 @@
 
 ## 1. Comptes
 
-- [ ] Compte **Bugcrowd** chercheur créé (c'est lui qui sera payé). Récupère ton adresse
-      `@bugcrowdninja.com` dans ton profil Bugcrowd : OpenAI **préfère** que les comptes
-      de test OpenAI soient créés avec. Note-la hors de ce dépôt.
+- [ ] Compte **Bugcrowd** chercheur créé (c'est lui qui sera payé).
+      **Adresse `@bugcrowdninja.com` : rien à créer.** C'est un alias automatique
+      `<ton_pseudo_bugcrowd>@bugcrowdninja.com` qui transfère vers l'email principal
+      de ton compte Bugcrowd (généré à la 1ʳᵉ connexion, jusqu'à ~10 min d'attente).
+      Ton pseudo se lit dans l'URL de ton profil : `bugcrowd.com/h/<pseudo>`.
+      Astuce 2 comptes : `pseudo+a@bugcrowdninja.com` et `pseudo+b@bugcrowdninja.com`
+      arrivent dans la même boîte. OpenAI *préfère* cet alias mais le brief dit
+      explicitement qu'il n'est **pas obligatoire** — un compte perso convient aussi.
+      Doc : https://docs.bugcrowd.com/researchers/participating-in-program/your-bugcrowdninja-email-address/
 - [ ] Compte OpenAI **A** (« victime ») — idéalement l'adresse bugcrowdninja.
 - [ ] Compte OpenAI **B** (« attaquant ») — une seconde adresse **à toi**
       (alias `+b` accepté par ton fournisseur, ou autre boîte que tu contrôles).
