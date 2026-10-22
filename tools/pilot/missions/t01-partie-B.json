@@ -4,13 +4,13 @@
   "steps": [
     {
       "action": "wait_for_user",
-      "message": "AVANT de lancer cette mission : 1) remplace l'URL placeholder de l'etape suivante par l'URL de TA conversation privee du compte A (copiee dans tes notes locales, ne la commite jamais), 2) verifie dans Chrome pilote B que tu es bien connecte avec le compte B. Puis Entree ici.",
-      "note": "preparation manuelle"
+      "message": "Verifie dans Chrome pilote B que tu es bien connecte avec le compte B (snwdc+b), et que la mission T-01 partie A a deja tourne (elle a sauvegarde l'URL en local). Puis Entree ici.",
+      "note": "preparation : aucun copier-coller d'URL necessaire"
     },
     {
       "action": "goto",
-      "url": "https://chatgpt.com/c/__REMPLACE_PAR_L_ID_DE_TA_CONVERSATION_A__",
-      "note": "ouverture directe, sans partage"
+      "url_fichier": "conversation-A",
+      "note": "ouverture directe de la conversation privee de A, sans partage"
     },
     {
       "action": "wait",

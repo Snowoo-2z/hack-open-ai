@@ -11,3 +11,4 @@ __pycache__/
 # Pilotage local : profils Chrome de test et resultats bruts
 oai-pilot/
 tools/pilot/resultats/
+tools/pilot/cibles-locales/

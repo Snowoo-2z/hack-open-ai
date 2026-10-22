@@ -11,13 +11,13 @@ Légende statut : ☐ à faire · 🔄 en cours · ✅ RAS (comportement sain) �
 ## Mission 0 — Setup + inventaire (prérequis à tout)
 
 ☐ Setup complet de `02-setup-chromium.md` (profils OAI-A / OAI-B connectés).
-☐ **Inventaire des surfaces** (compte A, simple navigation, rien d'autre) — coche ce que ton
-compte gratuit voit réellement et renvoie-moi la liste + l'URL de chaque écran :
-conversations, partage de conversation, Projets, GPTs (explorer / créer), fichiers joints à une
-conversation, bibliothèque/fichiers, mémoire & instructions personnalisées (Paramètres),
-applications/connecteurs (Paramètres → Apps/Connecteurs), export de données,
-platform.openai.com (organisation, projets, clés API — dis-moi si l'accès est proposé).
-→ C'est cette carte qui décidera quels tests T-01… sont faisables chez toi.
+🔄 **Inventaire des surfaces** — 1ᵉʳ passage fait le 2026-10-22 via la mission d'exemple
+(compte A **Free**, interface FR). Confirmé visible : Nouveau chat, **Images**, **Planifié**,
+**Bibliothèque**, **Plugins**, **Codex**, **Explorer**, **Projets** (aucun), Récents,
+bouton `+` (pièces jointes), « Rejoindre l'espace de travail », mode Work = « Forfait
+supérieur requis ». Réseau observé (filtré) : `GET /backend-api/wham/usage` (200).
+Reste à confirmer au fil des missions : bouton Partager sur une conversation, écran de
+création de GPT (Explorer), Paramètres (mémoire, connecteurs, export), platform.openai.com.
 
 ## Famille 1 — Objets privés de A, tentatives d'accès de B (cœur de la chasse)
 

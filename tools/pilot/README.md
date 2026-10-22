@@ -71,7 +71,12 @@ décrit dans `../../02-setup-chromium.md` — le profil piloté remplace les pro
 
 ## Exécuter une mission
 
-Dans `tools/pilot/`, fenêtre du bon compte déjà ouverte et connectée :
+**Le plus simple sous Windows : double-clique `GO.bat`** (dans `tools/pilot/`).
+Menu numéroté : lancer Chrome A/B, lancer chaque mission, `git pull` — aucune commande
+à retaper. À la fin d'une mission, **le dossier des résultats s'ouvre tout seul** dans
+l'Explorateur, avec le fichier `A-MENVOYER.md` sélectionné.
+
+En ligne de commande, dans `tools/pilot/`, fenêtre du bon compte déjà ouverte et connectée :
 
 - Windows : `py pilot.py missions\exemple-verif-connexion.json`
 - macOS/Linux : `python3 pilot.py missions/exemple-verif-connexion.json`
@@ -81,20 +86,23 @@ Dans `tools/pilot/`, fenêtre du bon compte déjà ouverte et connectée :
 
 Résultats dans `resultats/<date>-<mission>/` (dossier ignoré par Git) :
 
-- `resultat.md` : le déroulé horodaté — **c'est ce que tu me renvoies en premier** ;
-- `texte-*.txt` : texte visible des pages, **déjà sanitisé** (emails/jetons masqués) ;
-- `reseau.txt` : méthode + code HTTP + chemin, **sans paramètres d'URL** ;
+- **`A-MENVOYER.md` : le fichier unique à me renvoyer** (déroulé + textes sanitisés +
+  journal réseau filtré). Une copie est aussi écrite à chemin fixe :
+  `resultats/DERNIER-A-MENVOYER.md` — toujours au même endroit, rien à chercher ;
+- `resultat.md`, `texte-*.txt`, `reseau.txt` : les pièces séparées (secours/détail).
+  Le réseau est **filtré** (API métier + erreurs, sans paramètres d'URL) : fini le bruit CDN ;
 - `*.png` : captures — ⚠️ **non modifiées** : regarde-les, masque email/avatar si visibles, puis envoie.
 
-## Première mission réelle : T-01
+## Première mission réelle : T-01 (zéro copier-coller d'URL)
 
-1. Compte A (à la main, 1 fois) : crée la conversation contenant `MARQUEUR-A-001`
-   (message exact dans `../../03-plan-tests-phase1.md`), **sans la partager**,
-   copie son URL dans tes notes locales.
-2. Ouvre `missions/t01-partie-B.json` dans un éditeur de texte et remplace
-   `__REMPLACE_PAR_L_ID_DE_TA_CONVERSATION_A__` par l'ID de ton URL.
-   ⚠️ Ce fichier modifié reste **chez toi**, ne le commite jamais.
-3. Chrome **B** lancé (port 9223) et connecté, puis :
-   `python3 pilot.py missions/t01-partie-B.json` (ou `py pilot.py missions\t01-partie-B.json`)
-4. Renvoie-moi `resultat.md` + `texte-page-B.txt` + la capture relue.
-   ✅ Sain attendu : `MARQUEUR-A-001 : ABSENT`. 🚩 `TROUVE` = on arrête tout et on en parle.
+L'URL de la conversation de A transite toute seule vers la mission B, via un fichier
+local `cibles-locales/conversation-A.txt` (ignoré par Git, ne quitte jamais ton PC).
+
+1. `GO.bat` → **1** (Chrome A) : connecte-toi compte A si besoin.
+2. `GO.bat` → **4** (T-01 partie A) : à la pause, crée la conversation
+   `MARQUEUR-A-001` à la main (20 s, message indiqué par la mission), **sans la partager**,
+   laisse-la affichée, Entrée. Le script vérifie le marqueur, sauvegarde l'URL, capture.
+3. `GO.bat` → **2** (Chrome B) : connecte-toi compte B.
+4. `GO.bat` → **5** (T-01 partie B) : le script ouvre l'URL sauvegardée et vérifie.
+5. Envoie-moi les deux `A-MENVOYER.md` (celui de A, puis celui de B) + les captures relues.
+   ✅ Sain attendu chez B : `MARQUEUR-A-001 : ABSENT`. 🚩 `TROUVE` = on arrête tout et on en parle.

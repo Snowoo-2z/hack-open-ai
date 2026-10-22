@@ -1,0 +1,31 @@
+{
+  "nom": "T-01 partie A - creer la conversation privee marqueur",
+  "port": 9222,
+  "steps": [
+    {
+      "action": "wait_for_user",
+      "message": "Dans Chrome A : clique 'Nouveau chat', envoie EXACTEMENT ce message : Ceci est un objet de test de securite autorise (Bugcrowd). Reponds uniquement : MARQUEUR-A-001  -- puis attends la reponse complete, NE partage PAS la conversation, laisse-la affichee. Entree ici quand c'est fait.",
+      "note": "creation manuelle du marqueur (20 secondes)"
+    },
+    {
+      "action": "wait",
+      "secondes": 3,
+      "note": "fin de chargement"
+    },
+    {
+      "action": "check_text",
+      "texte": "MARQUEUR-A-001",
+      "note": "SAIN ATTENDU chez A : TROUVE (c'est sa propre conversation)"
+    },
+    {
+      "action": "save_current_url",
+      "fichier": "conversation-A",
+      "note": "l'URL est sauvegardee en local, la mission B la relira toute seule"
+    },
+    {
+      "action": "screenshot",
+      "fichier": "preuve-conversation-A",
+      "note": "preuve cote proprietaire"
+    }
+  ]
+}
